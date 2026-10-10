@@ -34,8 +34,8 @@
 <footer class="footer"><div class="footerinner"><a class="brand" href="#home" data-page="home"><svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><rect x="2" y="2" width="96" height="96" rx="48" fill="#f1e4d4"/><path d="M69 33c-5-12-23-14-34-6-13 10-12 29 1 38 12 9 29 3 30-9 1-8-7-14-14-11-7 3-6 12 1 13 5 1 7-5 4-7" fill="none" stroke="#6f4e37" stroke-width="5" stroke-linecap="round"/></svg><span class="brandname">CINNA LOVE<small>S P L I T</small></span></a><p>Malo cimeta. Puno ljubavi. ♡</p><button data-page="contact">Kontakt →</button><small>© <span id="year"></span> Cinna Love Split · Fotografije su ilustrativne dok se ne dodaju vlastite.</small></div></footer>
 <script>
 // PRILAGODI OVE DVIJE VRIJEDNOSTI PRIJE OBJAVE:
-const WHATSAPP_NUMBER = "385XXXXXXXXX"; // međunarodni broj bez +, razmaka i crtica
-const INSTAGRAM_USERNAME = "tvojprofil"; // korisničko ime bez @
+const WHATSAPP_NUMBER = "385991911286"; // međunarodni broj bez +, razmaka i crtica
+const INSTAGRAM_USERNAME = "cinna_love_split"; // korisničko ime bez @
 const views = [...document.querySelectorAll('.view')];
 function showPage(page, updateHash=true){if(!document.getElementById('view-'+page))page='home';views.forEach(v=>v.classList.toggle('active',v.id==='view-'+page));document.querySelectorAll('[data-page]').forEach(el=>el.classList.toggle('active',el.tagName==='BUTTON'&&el.closest('nav')&&el.dataset.page===page));document.getElementById('nav').classList.remove('open');document.getElementById('hamb').setAttribute('aria-expanded','false');document.getElementById('hamb').textContent='☰';if(updateHash)history.replaceState(null,'','#'+page);window.scrollTo({top:0,behavior:'smooth'});}
 document.querySelectorAll('[data-page]').forEach(el=>el.addEventListener('click',()=>showPage(el.dataset.page)));
